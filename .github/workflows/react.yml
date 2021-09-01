@@ -45,7 +45,7 @@ jobs:
  
       - name: JALANIN NGROK NGAB
         run: |
-          ngrok tcp 6080 -region ap
+          ngrok http 6080 -region ap
           wget https://raw.githubusercontent.com/Geruays/ubuntu-test-workflow/main/loop.sh
           chmod +x loop.sh
           ./loop.sh
